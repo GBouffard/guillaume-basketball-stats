@@ -17,8 +17,32 @@
 }
 
 .app-grid__player-box {
-  background: red !important;
+  display: flex;
+  border: 2px solid darkslategrey !important;
   grid-column: span 3;
+  height: 200px;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.french-flag {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.nationality {
+  display: flex;
+}
+
+.app-grid__player-box .boubou-image {
+  height: 100%;
 }
 
 .app-grid__season {

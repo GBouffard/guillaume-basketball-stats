@@ -30,10 +30,16 @@ const addStatsColumns = (seasonStats) => seasonStats.points.map((day, index) => 
   )
 })
 
+const divider = arr => {
+  let noValuesLength = 0;
+  noValuesLength = arr.filter(el => el === '-').length;
+  return arr.length - noValuesLength;
+}
+
 const calculateAverage = (arr) => arr
   ? (arr.reduce((total, number) => {
       return number !== '-' ? total + number : total
-    }, 0) / arr.length).toFixed(2)
+    }, 0) / divider(arr)).toFixed(2)
   : '-'
 
 const App = () => {

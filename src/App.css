@@ -31,6 +31,8 @@
 .app-grid__assists_total {
   background: yellow !important;
   font-weight: bold;
+  /* purposely hidden to not see what I do */
+  visibility: hidden;
 }
 
 .header {

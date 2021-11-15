@@ -1,18 +1,5 @@
 import './App.css'
-
-const stats = {
-  '2020-2021': {
-    points: [8, 4, 10, 34, 7],
-    rebounds: null,
-    assists: null
-  },
-
-  '2021-2022': {
-    points: [19, 9, 9, 18, 25, 9],
-    rebounds: ['-', '-', '-', 1, 7, 5],
-    assists: ['-', '-', 6, 5, 13, 7]
-  }
-}
+import stats from './Stats'
 
 const addStatsColumns = (seasonStats) => seasonStats.points.map((day, index) => {
   return (

@@ -5,14 +5,14 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 0.5rem; /* shorthand property for grid-column-gap and grid-row-gap */
-  background-color: pink;
+  border: 3px black solid;
   margin-top: 1rem;
   padding: 0.5rem;
   width: 400px;
 }
 
 .app-grid > div {
-  background-color: aliceblue;
+  border: 1px solid lightgrey;
   text-align: center;
 }
 
@@ -22,12 +22,12 @@
 }
 
 .app-grid__season {
-  background: green !important;
+  background: skyblue !important;
   grid-column: span 3;
 }
 
 .app-grid__games_played {
-  background: orange !important;
+  background: lightcyan !important;
   grid-column: span 2;
 }
 
@@ -46,5 +46,5 @@
 
 .app-grid__games {
   font-weight: bold;
-  background: orange !important;
+  background: lightcyan !important;
 }

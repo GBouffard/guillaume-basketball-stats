@@ -21,6 +21,11 @@
   grid-column: span 3;
 }
 
+.app-grid__season {
+  background: green !important;
+  grid-column: span 3;
+}
+
 .app-grid__points_total,
 .app-grid__rebounds_total,
 .app-grid__assists_total {

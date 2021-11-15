@@ -17,6 +17,17 @@
 }
 
 .app-grid__player-box {
-  background-color: red;
+  background: red !important;
   grid-column: span 3;
+}
+
+.app-grid__points_total,
+.app-grid__rebounds_total,
+.app-grid__assists_total {
+  background: yellow !important;
+  font-weight: bold;
+}
+
+.header {
+  font-weight: bold;
 }

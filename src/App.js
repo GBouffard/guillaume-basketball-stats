@@ -1,4 +1,5 @@
 import './App.css'
+import PlayerBiography from './PlayerBiography'
 import stats from './Stats'
 
 const addStatsColumns = (seasonStats) => seasonStats.points.map((day, index) => {
@@ -32,7 +33,7 @@ const calculateAverage = (arr) => arr
 const App = () => {
   return (
     <div className='app-grid'>
-      <div className='app-grid__player-box'>Boubou</div>
+      <PlayerBiography />
 
       {Object.keys(stats).map(season => {
         const seasonStats = stats[season]

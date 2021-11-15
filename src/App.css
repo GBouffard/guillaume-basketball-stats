@@ -26,6 +26,11 @@
   grid-column: span 3;
 }
 
+.app-grid__games_played {
+  background: orange !important;
+  grid-column: span 2;
+}
+
 .app-grid__points_total,
 .app-grid__rebounds_total,
 .app-grid__assists_total {
@@ -37,4 +42,9 @@
 
 .header {
   font-weight: bold;
+}
+
+.app-grid__games {
+  font-weight: bold;
+  background: orange !important;
 }

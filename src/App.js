@@ -52,6 +52,12 @@ const App = () => {
         return (
           <>
             <div className='app-grid__season'>{season}</div>
+            <div className='app-grid__games_played header'>
+              GAMES PLAYED:
+            </div>
+            <div className='app-grid__games'>
+              {seasonStats.points.length}
+            </div>
             <div className='app-grid__points header'>
               POINTS
             </div>

@@ -5,9 +5,9 @@ import stats from './Stats'
 const addStatsColumns = (seasonStats) => seasonStats.points.map((day, index) => {
   return (
     <>
-    <div className='app-grid__points'>
-      {seasonStats.points[index]}
-    </div>
+      <div className='app-grid__points'>
+        {seasonStats.points[index]}
+      </div>
       <div className='app-grid__rebounds'>
         {seasonStats.rebounds ? seasonStats.rebounds[index] : '-'}
       </div>
@@ -19,9 +19,9 @@ const addStatsColumns = (seasonStats) => seasonStats.points.map((day, index) => 
 })
 
 const divider = arr => {
-  let noValuesLength = 0;
-  noValuesLength = arr.filter(el => el === '-').length;
-  return arr.length - noValuesLength;
+  let noValuesLength = 0
+  noValuesLength = arr.filter(el => el === '-').length
+  return arr.length - noValuesLength
 }
 
 const addStats = arr => arr.reduce((total, number) => {
@@ -64,13 +64,17 @@ const App = () => {
 
             {addStatsColumns(seasonStats)}
 
-            <div className='app-grid__total'>{calculateTotal(seasonStats.points)}</div>
-            <div className='app-grid__total'>{calculateTotal(seasonStats.rebounds)}</div>
-            <div className='app-grid__total'>{calculateTotal(seasonStats.assists)}</div>
-
-            <div className='app-grid__average'>{calculateAverage(seasonStats.points)}</div>
-            <div className='app-grid__average'>{calculateAverage(seasonStats.rebounds)}</div>
-            <div className='app-grid__average'>{calculateAverage(seasonStats.assists)}</div>
+            <div className='app-grid__header'>
+              <div>TOTALS & AVERAGE</div>
+              <div className='app-grid__totals'><div>{calculateTotal(seasonStats.points)}</div>
+                <div>{calculateTotal(seasonStats.rebounds)}</div>
+                <div>{calculateTotal(seasonStats.assists)}</div>
+              </div>
+              <div className='app-grid__average'><div>{calculateAverage(seasonStats.points)}</div>
+                <div>{calculateAverage(seasonStats.rebounds)}</div>
+                <div>{calculateAverage(seasonStats.assists)}</div>
+              </div>
+            </div>
           </>
         )
       })}

@@ -3,7 +3,7 @@
 }
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem; /* shorthand property for grid-column-gap and grid-row-gap */
   border: 3px black solid;
   margin-top: 1rem;
@@ -50,25 +50,41 @@
   grid-column: span 3;
 }
 
+.app-grid__header {
+  grid-column: span 3;
+  font-weight: bold;
+  background: yellow !important;
+}
+
 .app-grid__games_played {
   background: lightcyan !important;
   grid-column: span 2;
 }
 
-.app-grid__total {
-  background: orange !important;
-  font-weight: bold;
-}
-
+.app-grid__totals,
 .app-grid__average {
-  background: yellow !important;
-  font-weight: bold;
-  /* purposely hidden to not see what I do */
-  visibility: hidden;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  padding: 0.25rem;
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
+}
+
+.app-grid__totals {
+  /* background: orange !important; */
+  /* font-weight: bold; */
+  border-bottom: 1px double darkgrey;
+}
+
+.app-grid__average {
+  /* purposely hidden to not see what I do */
+  visibility: hidden;
 }
 
 .app-grid__games {

@@ -1,27 +1,9 @@
 import './App.css'
 import React, { useState } from 'react'
-import {
-  calculateTotal,
-  calculateAverage
-} from './calculationHelper'
 import PlayerBiography from './PlayerBiography'
 import AllGamesStats from './AllGamesStats'
+import TotalsAndAverageStats from './TotalsAndAverageStats'
 import stats from './Stats'
-
-const totalsAndAverageStats = (seasonStats) =>
-  (
-    <div className='app-grid__header'>
-      <div>TOTALS & AVERAGE</div>
-      <div className='app-grid__totals'><div>{calculateTotal(seasonStats.points)}</div>
-        <div>{calculateTotal(seasonStats.rebounds)}</div>
-        <div>{calculateTotal(seasonStats.assists)}</div>
-      </div>
-      <div className='app-grid__average'><div>{calculateAverage(seasonStats.points)}</div>
-        <div>{calculateAverage(seasonStats.rebounds)}</div>
-        <div>{calculateAverage(seasonStats.assists)}</div>
-      </div>
-    </div>
-  )
 
 const seasonsList = Object.keys(stats)
 
@@ -33,10 +15,10 @@ const makeOptions = seasons =>
   ))
 
 const App = () => {
-  const [dropdownValue, setDropdownValue] = useState(seasonsList[seasonsList.length - 1])
+  const [selectedSeason, setSelectedSeason] = useState(seasonsList[seasonsList.length - 1])
 
-  const handleDropdownChange = e => {
-    setDropdownValue(e.target.value)
+  const handleSeasonChange = e => {
+    setSelectedSeason(e.target.value)
   }
 
   return (
@@ -44,8 +26,8 @@ const App = () => {
       <PlayerBiography />
 
       <select
-        onChange={handleDropdownChange}
-        value={dropdownValue}
+        onChange={handleSeasonChange}
+        value={selectedSeason}
         defaultValue={seasonsList[seasonsList.length - 1]}
       >
         {makeOptions(seasonsList)}
@@ -74,7 +56,7 @@ const App = () => {
 
             <AllGamesStats seasonStats={seasonStats} />
 
-            {totalsAndAverageStats(seasonStats)}
+            <TotalsAndAverageStats seasonStats={seasonStats} />
           </>
         )
       })}

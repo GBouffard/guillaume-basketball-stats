@@ -6,7 +6,7 @@ import {
 import PlayerBiography from './PlayerBiography'
 import stats from './Stats'
 
-const addStatsColumns = (seasonStats) => seasonStats.points.map((day, index) => {
+const dailyGameStats = (seasonStats) => seasonStats.points.map((day, index) => {
   return (
     <>
       <div className='app-grid__points'>
@@ -22,12 +22,29 @@ const addStatsColumns = (seasonStats) => seasonStats.points.map((day, index) => 
   )
 })
 
+const totalsAndAverageStats = (seasonStats) =>
+  (
+    <div className='app-grid__header'>
+      <div>TOTALS & AVERAGE</div>
+      <div className='app-grid__totals'><div>{calculateTotal(seasonStats.points)}</div>
+        <div>{calculateTotal(seasonStats.rebounds)}</div>
+        <div>{calculateTotal(seasonStats.assists)}</div>
+      </div>
+      <div className='app-grid__average'><div>{calculateAverage(seasonStats.points)}</div>
+        <div>{calculateAverage(seasonStats.rebounds)}</div>
+        <div>{calculateAverage(seasonStats.assists)}</div>
+      </div>
+    </div>
+  )
+
+const seasonsList = Object.keys(stats)
+
 const App = () => {
   return (
     <div className='app-grid'>
       <PlayerBiography />
 
-      {Object.keys(stats).map(season => {
+      {seasonsList.map(season => {
         const seasonStats = stats[season]
         return (
           <>
@@ -48,19 +65,9 @@ const App = () => {
               ASSISTS
             </div>
 
-            {addStatsColumns(seasonStats)}
+            {dailyGameStats(seasonStats)}
 
-            <div className='app-grid__header'>
-              <div>TOTALS & AVERAGE</div>
-              <div className='app-grid__totals'><div>{calculateTotal(seasonStats.points)}</div>
-                <div>{calculateTotal(seasonStats.rebounds)}</div>
-                <div>{calculateTotal(seasonStats.assists)}</div>
-              </div>
-              <div className='app-grid__average'><div>{calculateAverage(seasonStats.points)}</div>
-                <div>{calculateAverage(seasonStats.rebounds)}</div>
-                <div>{calculateAverage(seasonStats.assists)}</div>
-              </div>
-            </div>
+            {totalsAndAverageStats(seasonStats)}
           </>
         )
       })}

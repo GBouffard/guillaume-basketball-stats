@@ -1,6 +1,7 @@
 import './App.css'
 import React, { useState } from 'react'
 import PlayerBiography from './PlayerBiography'
+import TableHeader from './TableHeader'
 import AllGamesStats from './AllGamesStats'
 import TotalsAndAverageStats from './TotalsAndAverageStats'
 import stats from './Stats'
@@ -37,22 +38,7 @@ const App = () => {
         const seasonStats = stats[season]
         return (
           <>
-            <div className='app-grid__season'>{season}</div>
-            <div className='app-grid__games_played header'>
-              GAMES PLAYED:
-            </div>
-            <div className='app-grid__games'>
-              {seasonStats.points.length}
-            </div>
-            <div className='app-grid__points header'>
-              POINTS
-            </div>
-            <div className='app-grid__rebounds header'>
-              REBOUNDS
-            </div>
-            <div className='app-grid__assists header'>
-              ASSISTS
-            </div>
+            <TableHeader season={season} seasonStats={seasonStats} />
 
             <AllGamesStats seasonStats={seasonStats} />
 

@@ -1,4 +1,8 @@
 import './App.css'
+import {
+  calculateTotal,
+  calculateAverage
+} from './calculationHelper'
 import PlayerBiography from './PlayerBiography'
 import stats from './Stats'
 
@@ -17,24 +21,6 @@ const addStatsColumns = (seasonStats) => seasonStats.points.map((day, index) => 
     </>
   )
 })
-
-const divider = arr => {
-  let noValuesLength = 0
-  noValuesLength = arr.filter(el => el === '-').length
-  return arr.length - noValuesLength
-}
-
-const addStats = arr => arr.reduce((total, number) => {
-  return number !== '-' ? total + number : total
-}, 0)
-
-const calculateTotal = (arr) => arr
-  ? addStats(arr)
-  : '-'
-
-const calculateAverage = (arr) => arr
-  ? (addStats(arr) / divider(arr)).toFixed(2)
-  : '-'
 
 const App = () => {
   return (

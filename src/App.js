@@ -16,24 +16,19 @@ const App = () => {
     setSelectedSeason(e.target.value)
   }
 
+  const seasonStats = stats[selectedSeason]
+
   return (
     <div className='app-grid'>
       <PlayerBiography />
 
       <SeasonSelect onChange={handleSeasonChange} value={selectedSeason} seasonsList={seasonsList} />
 
-      {seasonsList.map(season => {
-        const seasonStats = stats[season]
-        return (
-          <>
-            <TableHeader season={season} seasonStats={seasonStats} />
+      <TableHeader season={selectedSeason} seasonStats={seasonStats} />
 
-            <AllGamesStats seasonStats={seasonStats} />
+      <AllGamesStats seasonStats={seasonStats} />
 
-            <TotalsAndAverageStats seasonStats={seasonStats} />
-          </>
-        )
-      })}
+      <TotalsAndAverageStats seasonStats={seasonStats} />
 
     </div>
   )

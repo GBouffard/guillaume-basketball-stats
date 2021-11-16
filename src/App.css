@@ -55,9 +55,12 @@
   grid-column: span 2;
 }
 
-.app-grid__points_total,
-.app-grid__rebounds_total,
-.app-grid__assists_total {
+.app-grid__total {
+  background: orange !important;
+  font-weight: bold;
+}
+
+.app-grid__average {
   background: yellow !important;
   font-weight: bold;
   /* purposely hidden to not see what I do */

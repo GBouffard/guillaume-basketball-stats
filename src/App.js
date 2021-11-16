@@ -24,10 +24,16 @@ const divider = arr => {
   return arr.length - noValuesLength;
 }
 
+const addStats = arr => arr.reduce((total, number) => {
+  return number !== '-' ? total + number : total
+}, 0)
+
+const calculateTotal = (arr) => arr
+  ? addStats(arr)
+  : '-'
+
 const calculateAverage = (arr) => arr
-  ? (arr.reduce((total, number) => {
-      return number !== '-' ? total + number : total
-    }, 0) / divider(arr)).toFixed(2)
+  ? (addStats(arr) / divider(arr)).toFixed(2)
   : '-'
 
 const App = () => {
@@ -58,9 +64,13 @@ const App = () => {
 
             {addStatsColumns(seasonStats)}
 
-            <div className='app-grid__points_total'>{calculateAverage(seasonStats.points)}</div>
-            <div className='app-grid__rebounds_total'>{calculateAverage(seasonStats.rebounds)}</div>
-            <div className='app-grid__assists_total'>{calculateAverage(seasonStats.assists)}</div>
+            <div className='app-grid__total'>{calculateTotal(seasonStats.points)}</div>
+            <div className='app-grid__total'>{calculateTotal(seasonStats.rebounds)}</div>
+            <div className='app-grid__total'>{calculateTotal(seasonStats.assists)}</div>
+
+            <div className='app-grid__average'>{calculateAverage(seasonStats.points)}</div>
+            <div className='app-grid__average'>{calculateAverage(seasonStats.rebounds)}</div>
+            <div className='app-grid__average'>{calculateAverage(seasonStats.assists)}</div>
           </>
         )
       })}

@@ -21,6 +21,7 @@ const PlayerBiography = () => <div className='app-grid__player-box'>
                 <div>Height: 169cm</div>
                 <div>Weight: 62 Kgs</div>
                 <div className="nationality">Nationality: {frenchFlag}</div>
+                <div>Position: Point Guard</div>
             </div>
 </div>;
 

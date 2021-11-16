@@ -1,19 +1,13 @@
 import './App.css'
 import React, { useState } from 'react'
 import PlayerBiography from './PlayerBiography'
+import SeasonSelect from './SeasonSelect'
 import TableHeader from './TableHeader'
 import AllGamesStats from './AllGamesStats'
 import TotalsAndAverageStats from './TotalsAndAverageStats'
 import stats from './Stats'
 
 const seasonsList = Object.keys(stats)
-
-const makeOptions = seasons =>
-  seasons.map((season, i) => (
-    <option value={season} key={i}>
-      {season}
-    </option>
-  ))
 
 const App = () => {
   const [selectedSeason, setSelectedSeason] = useState(seasonsList[seasonsList.length - 1])
@@ -26,13 +20,7 @@ const App = () => {
     <div className='app-grid'>
       <PlayerBiography />
 
-      <select
-        onChange={handleSeasonChange}
-        value={selectedSeason}
-        defaultValue={seasonsList[seasonsList.length - 1]}
-      >
-        {makeOptions(seasonsList)}
-      </select>
+      <SeasonSelect onChange={handleSeasonChange} value={selectedSeason} seasonsList={seasonsList} />
 
       {seasonsList.map(season => {
         const seasonStats = stats[season]

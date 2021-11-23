@@ -3,12 +3,12 @@
   "name": "Guillaume Basketball Stats",
   "icons": [
     {
-      "src": "basketball-192.png",
+      "src": "/images/basketball-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "basketball-512.png",
+      "src": "/images/basketball-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

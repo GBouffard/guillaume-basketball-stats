@@ -17,13 +17,13 @@ const PlayerBiography = () => <div className='app-grid__player-box'>
     src={imagesUrls.boubou}
   />
   <div className='player-info'>
-    <div>Name: BOUFFARD</div>
-    <div>Surname: Guillaume</div>
-    <div>D.O.B: 09/04/1980</div>
-    <div>Height: 169cm</div>
-    <div>Weight: 62 Kgs</div>
+    <div>Name: <strong>BOUFFARD</strong></div>
+    <div>Surname: <strong>Guillaume</strong></div>
+    <div>D.O.B: <strong>09/04/1980</strong></div>
+    <div>Height: <strong>169cm</strong></div>
+    <div>Weight: <strong>62 Kgs</strong></div>
     <div className='nationality'>Nationality: {frenchFlag}</div>
-    <div>Position: Point Guard</div>
+    <div>Position: <strong>Point Guard</strong></div>
   </div>
 </div>
 

@@ -84,7 +84,7 @@
 
 .app-grid__average {
   /* purposely hidden to not see what I do */
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .app-grid__games {

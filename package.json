@@ -1,5 +1,6 @@
 {
   "name": "guillaume-basketball-stats",
+  "homepage": "https://gbouffard.github.io/guillaume-basketball-stats/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

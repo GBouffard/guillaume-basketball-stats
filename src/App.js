@@ -24,7 +24,7 @@ const App = () => {
 
       <SeasonSelect onChange={handleSeasonChange} value={selectedSeason} seasonsList={seasonsList} />
 
-      <TableHeader season={selectedSeason} seasonStats={seasonStats} />
+      <TableHeader seasonStats={seasonStats} />
 
       <AllGamesStats seasonStats={seasonStats} />
 

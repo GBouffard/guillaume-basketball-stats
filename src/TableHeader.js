@@ -1,9 +1,8 @@
 
 import React from 'react'
 
-const TableHeader = ({ season, seasonStats }) => (
+const TableHeader = ({ seasonStats }) => (
   <>
-    <div className='app-grid__season'>{season}</div>
     <div className='app-grid__games_played header'>
       GAMES PLAYED:
     </div>

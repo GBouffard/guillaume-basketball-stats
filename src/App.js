@@ -2,6 +2,7 @@ import './App.css'
 import React, { useState } from 'react'
 import PlayerBiography from './PlayerBiography'
 import SeasonSelect from './SeasonSelect'
+import GamesCounter from './GamesCounter'
 import TableHeader from './TableHeader'
 import AllGamesStats from './AllGamesStats'
 import TotalsAndAverageStats from './TotalsAndAverageStats'
@@ -23,6 +24,8 @@ const App = () => {
       <PlayerBiography />
 
       <SeasonSelect onChange={handleSeasonChange} value={selectedSeason} seasonsList={seasonsList} />
+
+      <GamesCounter seasonStats={seasonStats} />
 
       <TableHeader seasonStats={seasonStats} />
 

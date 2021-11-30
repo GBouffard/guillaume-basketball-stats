@@ -17,8 +17,7 @@ const PlayerBiography = () => <div className='app-grid__player-box'>
     src={imagesUrls.boubou}
   />
   <div className='player-info'>
-    <div>Surname: <strong>BOUFFARD</strong></div>
-    <div>First name: <strong>Guillaume</strong></div>
+    <div>Name: <strong>BOUFFARD Guillaume</strong></div>
     <div>D.O.B: <strong>09/04/1980</strong></div>
     <div>Height: <strong>169cm</strong></div>
     <div>Weight: <strong>62 Kgs</strong></div>

@@ -24,6 +24,7 @@ body {
   padding: 0.5rem;
   margin: 0 auto;
   width: 400px;
+  position: relative;
 }
 
 @media screen and (max-width: 420px) {
@@ -71,13 +72,21 @@ body {
   height: 100%;
 }
 
+.app-grid__games-counter {
+  position: absolute;
+  top: 224px;
+  right: 35px;
+}
+
 .app-grid select {
+  position: relative;
   background: skyblue !important;
   grid-column: span 3;
   font-size: 15px;
   font-weight: bold;
-  text-align: center;
   margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 4px;
 }
 
 .app-grid__header {
@@ -86,13 +95,6 @@ body {
   background: yellow !important;
   margin-top: 15px;
   border: 1px solid black;
-}
-
-.app-grid__games_played {
-  background: skyblue !important;
-  grid-column: span 2;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
 .app-grid__totals,
@@ -116,10 +118,12 @@ body {
   margin-top: 15px;
 }
 
-.app-grid__points,
-.app-grid__rebounds,
+.app-grid__points {
+  border-right: 1px solid lightgrey;
+}
+
 .app-grid__assists {
-  border: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
 }
 
 .app-grid__totals {
@@ -131,11 +135,4 @@ body {
 .app-grid__average {
   /* purposely hidden to not see what I do */
   /* visibility: hidden; */
-}
-
-.app-grid__games {
-  font-weight: bold;
-  background: skyblue !important;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
 }

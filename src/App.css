@@ -92,9 +92,10 @@ body {
 .app-grid__header {
   grid-column: span 3;
   font-weight: bold;
-  background: yellow !important;
   margin-top: 15px;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 4px;
+  background: lightcyan;
 }
 
 .app-grid__totals,
@@ -104,6 +105,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem;
   padding: 0.25rem;
+}
+.app-grid__totals-and-average {
+  background: skyblue !important;
 }
 
 .header {
@@ -129,7 +133,7 @@ body {
 .app-grid__totals {
   /* background: orange !important; */
   /* font-weight: bold; */
-  border-bottom: 1px double darkgrey;
+  /* border-bottom: 1px double darkgrey; */
 }
 
 .app-grid__average {

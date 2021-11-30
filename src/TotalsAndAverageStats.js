@@ -6,7 +6,7 @@ import {
 
 const AllGamesStats = ({ seasonStats }) => (
   <div className='app-grid__header'>
-    <div>TOTALS & AVERAGE</div>
+    <div className='app-grid__totals-and-average'>TOTALS & AVERAGE</div>
     <div className='app-grid__totals'><div>{calculateTotal(seasonStats.points)}</div>
       <div>{calculateTotal(seasonStats.rebounds)}</div>
       <div>{calculateTotal(seasonStats.assists)}</div>

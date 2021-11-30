@@ -32,7 +32,6 @@ const App = () => {
       <AllGamesStats seasonStats={seasonStats} />
 
       <TotalsAndAverageStats seasonStats={seasonStats} />
-
     </div>
   )
 }

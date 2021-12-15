@@ -13,6 +13,12 @@ body {
   justify-content: center;
 }
 
+@media screen and (max-width: 420px) {
+  #root {
+    align-items: start;
+  }
+}
+
 .App {
   text-align: center;
 }

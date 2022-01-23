@@ -91,6 +91,7 @@ body {
   position: absolute;
   top: 224px;
   right: 35px;
+  pointer-events: none;
 }
 
 .app-grid select {

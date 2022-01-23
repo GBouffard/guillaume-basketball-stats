@@ -56,6 +56,15 @@ body {
   height: 200px;
 }
 
+.app-grid__games-table {
+  grid-column: span 3;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: scroll;
+  height: 200px;
+}
+
 .player-info {
   display: flex;
   flex-direction: column;

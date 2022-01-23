@@ -20,7 +20,7 @@ const PlayerBiography = () => <div className='app-grid__player-box'>
     <div>Name: <strong>BOUFFARD Guillaume</strong></div>
     <div>D.O.B: <strong>09/04/1980</strong></div>
     <div>Height: <strong>169cm</strong></div>
-    <div>Weight: <strong>64 Kgs</strong></div>
+    <div>Weight: <strong>63 Kgs</strong></div>
     <div className='nationality'>Nationality: {frenchFlag}</div>
     <div>Position: <strong>Point Guard</strong></div>
   </div>

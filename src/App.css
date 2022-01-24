@@ -136,18 +136,20 @@ body {
   font-weight: bold;
 }
 
-.app-grid__points.header,
-.app-grid__rebounds.header,
-.app-grid__assists.header {
-  margin-top: 15px;
-}
-
 .app-grid__points {
   border-right: 1px solid lightgrey;
 }
 
 .app-grid__assists {
   border-left: 1px solid lightgrey;
+}
+
+.app-grid__top-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: span 3;
+  margin-top: 15px;
+  margin-right: 14px;
 }
 
 .app-grid__totals {

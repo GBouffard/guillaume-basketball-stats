@@ -27,7 +27,7 @@ const App = () => {
 
       <GamesCounter seasonStats={seasonStats} />
 
-      <TableHeader seasonStats={seasonStats} />
+      <TableHeader />
 
       <AllGamesStats seasonStats={seasonStats} />
 

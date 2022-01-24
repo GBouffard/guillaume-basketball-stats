@@ -1,18 +1,18 @@
 
 import React from 'react'
 
-const TableHeader = ({ seasonStats }) => (
-  <>
+const TableHeader = () => (
+  <div className='app-grid__top-row'>
     <div className='app-grid__points header'>
       POINTS
     </div>
-    <div className='app-grid__rebounds header'>
+    <div className='header'>
       REBOUNDS
     </div>
     <div className='app-grid__assists header'>
       ASSISTS
     </div>
-  </>
+  </div>
 )
 
 export default TableHeader

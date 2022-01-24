@@ -83,6 +83,10 @@ body {
   display: flex;
 }
 
+.nationality img {
+  margin-left: 5px;
+}
+
 .app-grid__player-box .boubou-image {
   height: 100%;
 }

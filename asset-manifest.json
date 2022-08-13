@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/guillaume-basketball-stats/static/css/main.c5316d50.chunk.css",
+    "main.css": "/guillaume-basketball-stats/static/css/main.1b2ec3d3.chunk.css",
     "main.js": "/guillaume-basketball-stats/static/js/main.71998521.chunk.js",
     "main.js.map": "/guillaume-basketball-stats/static/js/main.71998521.chunk.js.map",
     "runtime-main.js": "/guillaume-basketball-stats/static/js/runtime-main.f1d1f56c.js",
@@ -10,13 +10,13 @@
     "static/js/3.a9a9928b.chunk.js": "/guillaume-basketball-stats/static/js/3.a9a9928b.chunk.js",
     "static/js/3.a9a9928b.chunk.js.map": "/guillaume-basketball-stats/static/js/3.a9a9928b.chunk.js.map",
     "index.html": "/guillaume-basketball-stats/index.html",
-    "static/css/main.c5316d50.chunk.css.map": "/guillaume-basketball-stats/static/css/main.c5316d50.chunk.css.map",
+    "static/css/main.1b2ec3d3.chunk.css.map": "/guillaume-basketball-stats/static/css/main.1b2ec3d3.chunk.css.map",
     "static/js/2.a15a222b.chunk.js.LICENSE.txt": "/guillaume-basketball-stats/static/js/2.a15a222b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f1d1f56c.js",
     "static/js/2.a15a222b.chunk.js",
-    "static/css/main.c5316d50.chunk.css",
+    "static/css/main.1b2ec3d3.chunk.css",
     "static/js/main.71998521.chunk.js"
   ]
 }

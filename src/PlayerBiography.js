@@ -10,11 +10,11 @@ const frenchFlag = (
   />
 )
 
-const PlayerBiography = () => <div className='app-grid__player-box'>
+const PlayerBiography = ({selectedSeason}) => <div className='app-grid__player-box'>
   <img
     alt='Boubou'
     className='boubou-image'
-    src={imagesUrls.boubou}
+    src={imagesUrls.boubou(selectedSeason)}
   />
   <div className='player-info'>
     <div>Name: <strong>BOUFFARD Guillaume</strong></div>

@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div className='app-grid'>
-      <PlayerBiography />
+      <PlayerBiography selectedSeason={selectedSeason} />
 
       <SeasonSelect onChange={handleSeasonChange} value={selectedSeason} seasonsList={seasonsList} />
 

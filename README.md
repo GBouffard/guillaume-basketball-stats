@@ -5,7 +5,7 @@ Stats from my seasons
 ## How to run it:
 
 ```
-git clone git@github.com/GBouffard/guillaume-basketball-stats
+git clone git@github.com:GBouffard/guillaume-basketball-stats.git
 cd guillaume-basketball-stats
 npm install
 npm start

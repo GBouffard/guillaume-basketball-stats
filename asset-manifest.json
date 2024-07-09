@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/guillaume-basketball-stats/static/css/main.1b2ec3d3.chunk.css",
-    "main.js": "/guillaume-basketball-stats/static/js/main.33579104.chunk.js",
-    "main.js.map": "/guillaume-basketball-stats/static/js/main.33579104.chunk.js.map",
-    "runtime-main.js": "/guillaume-basketball-stats/static/js/runtime-main.f1d1f56c.js",
-    "runtime-main.js.map": "/guillaume-basketball-stats/static/js/runtime-main.f1d1f56c.js.map",
-    "static/js/2.a15a222b.chunk.js": "/guillaume-basketball-stats/static/js/2.a15a222b.chunk.js",
-    "static/js/2.a15a222b.chunk.js.map": "/guillaume-basketball-stats/static/js/2.a15a222b.chunk.js.map",
-    "static/js/3.a9a9928b.chunk.js": "/guillaume-basketball-stats/static/js/3.a9a9928b.chunk.js",
-    "static/js/3.a9a9928b.chunk.js.map": "/guillaume-basketball-stats/static/js/3.a9a9928b.chunk.js.map",
+    "main.css": "/guillaume-basketball-stats/static/css/main.88523513.chunk.css",
+    "main.js": "/guillaume-basketball-stats/static/js/main.92a12ca7.chunk.js",
+    "main.js.map": "/guillaume-basketball-stats/static/js/main.92a12ca7.chunk.js.map",
+    "runtime-main.js": "/guillaume-basketball-stats/static/js/runtime-main.750cdda6.js",
+    "runtime-main.js.map": "/guillaume-basketball-stats/static/js/runtime-main.750cdda6.js.map",
+    "static/js/2.d459bf49.chunk.js": "/guillaume-basketball-stats/static/js/2.d459bf49.chunk.js",
+    "static/js/2.d459bf49.chunk.js.map": "/guillaume-basketball-stats/static/js/2.d459bf49.chunk.js.map",
     "index.html": "/guillaume-basketball-stats/index.html",
-    "static/css/main.1b2ec3d3.chunk.css.map": "/guillaume-basketball-stats/static/css/main.1b2ec3d3.chunk.css.map",
-    "static/js/2.a15a222b.chunk.js.LICENSE.txt": "/guillaume-basketball-stats/static/js/2.a15a222b.chunk.js.LICENSE.txt"
+    "static/css/main.88523513.chunk.css.map": "/guillaume-basketball-stats/static/css/main.88523513.chunk.css.map",
+    "static/js/2.d459bf49.chunk.js.LICENSE.txt": "/guillaume-basketball-stats/static/js/2.d459bf49.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1d1f56c.js",
-    "static/js/2.a15a222b.chunk.js",
-    "static/css/main.1b2ec3d3.chunk.css",
-    "static/js/main.33579104.chunk.js"
+    "static/js/runtime-main.750cdda6.js",
+    "static/js/2.d459bf49.chunk.js",
+    "static/css/main.88523513.chunk.css",
+    "static/js/main.92a12ca7.chunk.js"
   ]
 }

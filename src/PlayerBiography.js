@@ -19,11 +19,17 @@ const PlayerBiography = ({selectedSeason}) => <div className='app-grid__player-b
   />
   <div className='player-info'>
     <div>Name: <strong>BOUFFARD Guillaume</strong></div>
-    <div>D.O.B: <strong>09/04/1980</strong></div>
-    <div>Height: <strong>169cm</strong></div>
-    <div>Weight: <strong>{weight[selectedSeason]} Kgs</strong></div>
-    <div className='nationality'>Nationality: {frenchFlag}</div>
     <div>Position: <strong>Point Guard</strong></div>
+    <div>Club: <strong>Saintes Basketball</strong></div>
+    <div className='nationality'>Nationality: {frenchFlag}</div>
+    <div>Height: <strong>169cm</strong></div>
+    <div>Weight: <strong>{weight[selectedSeason] || 64} Kgs</strong></div>
+    <div>D.O.B: <strong>9 Apr. 1980</strong></div>
+    <img
+    alt='club'
+    className='club-image'
+    src={selectedSeason.indexOf('2021') > -1 ? imagesUrls.oldSaintesLogo : imagesUrls.saintesLogo}
+  />
   </div>
 </div>
 

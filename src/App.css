@@ -73,6 +73,7 @@ body {
   justify-content: space-around;
   text-align: left;
   padding-left: 10px;
+  position: relative;
 }
 
 .french-flag {
@@ -84,6 +85,12 @@ body {
 .nationality {
   display: flex;
   align-items: center;
+}
+
+.club-image {
+  position: absolute;
+  right: 0;
+  bottom: 3px;
 }
 
 .nationality img {

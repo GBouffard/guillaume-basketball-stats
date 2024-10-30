@@ -1,6 +1,7 @@
 
 import React from 'react'
 import imagesUrls from './imagesUrls'
+import weight from './weight'
 
 const frenchFlag = (
   <img
@@ -20,7 +21,7 @@ const PlayerBiography = ({selectedSeason}) => <div className='app-grid__player-b
     <div>Name: <strong>BOUFFARD Guillaume</strong></div>
     <div>D.O.B: <strong>09/04/1980</strong></div>
     <div>Height: <strong>169cm</strong></div>
-    <div>Weight: <strong>62 Kgs</strong></div>
+    <div>Weight: <strong>{weight[selectedSeason]} Kgs</strong></div>
     <div className='nationality'>Nationality: {frenchFlag}</div>
     <div>Position: <strong>Point Guard</strong></div>
   </div>
